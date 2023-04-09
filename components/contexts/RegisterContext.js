@@ -7,7 +7,10 @@ const RegisterContextApi = React.createContext({
     registerCode: '',
     onLogOut: () => { },
     onLogin: (token) => { },
-    setRegisterCode: (code) => { }
+    setRegisterCode: (code) => { },
+    userToken: '',
+    setUserToken: (userToken) => { },
+
 });
 
 
@@ -18,6 +21,10 @@ export const RegisterContextProvider = (props) => {
 
     // ### Save Register Code ###
     const [regiserCode, setRegisterCode] = useState();
+
+    // ### Save User Token ###
+    const [userToken, setUserToken] = useState('');
+
 
     // ===
     useEffect(() => {
@@ -44,6 +51,7 @@ export const RegisterContextProvider = (props) => {
     // ===
     const logoutHandler = () => {
         localStorage.removeItem("access_token");
+        setUserToken('');
         setIsLoggedIn(false);
     }
 
@@ -60,6 +68,8 @@ export const RegisterContextProvider = (props) => {
                 isLoggedIn: isLoggedIn,
                 setRegisterCode: setRegisterCode,
                 registerCode: regiserCode,
+                userToken: userToken,
+                setUserToken: setUserToken,
                 onLogOut: logoutHandler,
                 onLogin: loginHandler
             }}

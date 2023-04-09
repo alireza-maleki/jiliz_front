@@ -1,17 +1,23 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Link from 'next/link';
 
 import classes from "./Popup.module.css";
 
+import RegisterContext from "../contexts/RegisterContext";
+import Router from 'next/router';
+
+
 const Popup = (props) => {
+
+    const registerCtx = useContext(RegisterContext);
 
     const [close, setClose] = useState(true);
 
     const closeHandler = () => {
-
         setClose(false);
-
     }
+
+
 
     return (
         <>
@@ -22,7 +28,7 @@ const Popup = (props) => {
                             <p>نوع آگهی رایگان خود را انتخاب کنید</p>
                         </div>
                         <div className={classes.links}>
-                            <Link href="/khadamat">
+                            <Link href={!registerCtx.userToken ? '/register' : '/khadamat'}>
                                 خدمات
                             </Link>
                             <Link href="/sabt-rahandazi">

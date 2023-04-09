@@ -203,13 +203,14 @@ const Khadamat = () => {
                 console.log(error);
             });
 
-        setProductId("");
-        setCategoryId("");
+
         setMozo("");
-        setTextArea("");
-        setShowInput("");
-        setOstan("");
-        setStatusProduct("");
+        setSelectData("");
+        setGetCategory("");
+        setGetSakht("");
+        setGetBrand("");
+        setGetOstan("");
+
 
     }
 
@@ -232,7 +233,7 @@ const Khadamat = () => {
                             <span>*</span>
                         </label>
 
-                        <input type='text' placeholder='موضوع آگهی را ثبت نمایید' onChange={mozoOnchange} required />
+                        <input type='text' placeholder='موضوع آگهی را ثبت نمایید' value={mozo} onChange={mozoOnchange} required />
                     </div>
 
                     <div className={classes.rightcontrol}>
@@ -265,7 +266,7 @@ const Khadamat = () => {
                         <div className={classes.control}>
                             <div className={classes.select1}>
 
-                                <select onClick={getApiHandler} onChange={(e) => OptionChangeHandler(e)} required>
+                                <select onClick={getApiHandler} value={selectData} onChange={(e) => OptionChangeHandler(e)} required>
                                     <option> ------ </option>
 
                                     {selectData ? (
@@ -279,7 +280,7 @@ const Khadamat = () => {
 
                                 </select>
 
-                                <select required onChange={categoryOnclick}>
+                                <select required value={getCategory} onChange={categoryOnclick}>
                                     <option value="0">-----</option>
 
                                     {getCategory ? (
@@ -292,7 +293,7 @@ const Khadamat = () => {
 
                                 </select>
 
-                                <select onClick={sakhtDataOnclick} onChange={(e) => sakhtDataOnchange(e)}>
+                                <select onClick={sakhtDataOnclick} value={getSakht} onChange={(e) => sakhtDataOnchange(e)}>
                                     <option>-----</option>
 
                                     {getSakht ? (
@@ -348,7 +349,7 @@ const Khadamat = () => {
                         <div className={classes.controlleft}>
                             <div className={classes.selectleft}>
                                 <div>
-                                    <select onClick={brandOnclick} onChange={(e) => brandOnchange(e)}>
+                                    <select onClick={brandOnclick} value={getBrand} onChange={(e) => brandOnchange(e)}>
                                         <option>-----</option>
 
                                         {getBrand ? (
@@ -365,7 +366,7 @@ const Khadamat = () => {
 
                                 <div>
                                     <div className={classes.select30}>
-                                        <input disabled={!showInput} onChange={(e) => priceHandler(e)} type="text" placeholder="قیمت را ثبت نمایید" />
+                                        <input disabled={!showInput} value={productPrice} onChange={(e) => priceHandler(e)} type="text" placeholder="قیمت را ثبت نمایید" />
                                         <div className={classes.sel31}>
                                             <select onChange={(e) => monayHandler(e)}>
                                                 <option>توافقی</option>
@@ -386,7 +387,7 @@ const Khadamat = () => {
 
 
                                 <div>
-                                    <select onClick={ostanDataOnclick} onChange={(e) => ostanDataOnchange(e)}>
+                                    <select onClick={ostanDataOnclick} value={getOstan} onChange={(e) => ostanDataOnchange(e)}>
                                         <option>-----</option>
 
                                         {getOstan ? (
@@ -411,28 +412,17 @@ const Khadamat = () => {
                             </label>
                         </div>
                         <div className={classes.textarea2}>
-                            <textarea required onChange={(e) => textAreaHandler(e)} rows="12" cols="120" placeholder="توضیحات خود را ثبت نمایید"></textarea>
+                            <textarea required value={textArea} onChange={(e) => textAreaHandler(e)} rows="12" cols="120" placeholder="توضیحات خود را ثبت نمایید"></textarea>
                         </div>
                     </div>
 
-                    <div className='row col-12'>
+                    <div className='row col-12 align-items-center justify-content-center'>
 
-                        <div className='col-lg-8'>
-                            <button className='btn btn-success text-white' >ذخیره اطلاعات</button>
+                        <div className='col-lg-6 mt-5'>
+                            <button className='btn btn-success text-white w-100 fw-bold' >ذخیره اطلاعات</button>
                         </div>
 
                     </div>
-
-                    {/* <div className={classes.file}>
-        <label>عکس خود را وارد کنید</label>
-        <input type="file" />
-    </div>
-    <div className={classes.btn2}>
-        <button>تصویر فرعی اول </button></div>
-
-    <div className={classes.btn3}><button >تصویر فرعی اول </button></div>
-    <div className={classes.btn4}><button >تصویر فرعی اول </button></div> */}
-
 
 
                 </div>

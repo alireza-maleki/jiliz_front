@@ -24,7 +24,8 @@ const Header = () => {
         const userToken = localStorage.getItem('access_token');
         if (userToken) {
             registerCtx.setIsLoggedIn(true);
-            console.log(userToken);
+            registerCtx.setUserToken(userToken);
+            // console.log(userToken);
         }
         console.log('into-header');
 
@@ -35,12 +36,10 @@ const Header = () => {
 
     const [agahi, setAgahi] = useState(false);
 
-
     const sabtAgahiHandler = () => {
-
         setAgahi((prev) => !prev);
-
     }
+    
 
     const logOutHandler = () => {
         registerCtx.onLogOut();
@@ -121,10 +120,10 @@ const Header = () => {
 
                         {
                             registerCtx.isLoggedIn ? (
-                                <>
+                                <div className={classes.panel}>
                                     <p>پنل کاربری</p>
                                     <p onClick={logOutHandler}>خروج</p>
-                                </>
+                                </div>
                             ) : (
                                 <div className={classes.login}>
                                     <Link href="/register">ثبت نام</Link>

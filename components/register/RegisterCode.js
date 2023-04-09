@@ -52,9 +52,12 @@ function RegisterCode() {
 
             registerCtx.onLogin(data.data.access);
             registerCtx.setIsLoggedIn(true);
+            registerCtx.setUserToken(data.data.access);
+            
 
             console.log(registerCtx.isLoggedIn);
 
+            
             localStorage.setItem("access_token", data.data.access);
 
             setEnterCode("");

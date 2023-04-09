@@ -99,7 +99,7 @@
 }
 
 .rigth {
-    width: 16%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,4 +141,12 @@
 .rigth .login:hover {
     background-color: rgb(150, 150, 251);
     color: #fff;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 46%;
+    margin: 0 1rem 0 0;
 }
