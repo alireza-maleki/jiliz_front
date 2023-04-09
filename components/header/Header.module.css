@@ -1,0 +1,144 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(54, 62, 134) 0%, rgb(37, 41, 101) 50%, rgb(37, 38, 111) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.left {
+    width: 30%;
+    height: 50px;
+    margin-top: 12px;
+    /* background-color: red; */
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    list-style: none;
+}
+
+.list li:first-child {
+    margin-top: -20px;
+}
+
+.list li {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hoverlist {
+    position: relative;
+}
+
+
+.hoverlist ul {
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    padding: 24px 8px;
+    border-radius: 5px;
+    top: 300px;
+    width: 200px;
+    text-align: right;
+    transition: all 0.4s;
+    z-index: 99;
+}
+
+.list li:hover ul {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    top: 33px;
+}
+
+.hoverlist ul li {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.hoverlist ul li:hover {
+    background-color: #efefef;
+}
+
+.hoverlist .one li:nth-child(2),
+.hoverlist .one li:nth-child(3) {
+    border-bottom: 1px solid #000;
+}
+
+.hoverlist .two li:nth-child(2),
+.hoverlist .two li:nth-child(6),
+.hoverlist .two li:nth-child(11) {
+    border-bottom: 1px solid #000;
+}
+
+
+
+.hoverlist ul li {
+    color: #000;
+    font-size: 15px;
+    padding: 12px 6px;
+    font-weight: 400;
+}
+
+.rigth {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+.rigth p {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    /* background-color: red; */
+}
+
+.rigth .login {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: blue;
+    /* font-size: 18px; */
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rigth .login a {
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    font-size: 13px;
+}
+
+.rigth .login:hover {
+    background-color: rgb(150, 150, 251);
+    color: #fff;
+}

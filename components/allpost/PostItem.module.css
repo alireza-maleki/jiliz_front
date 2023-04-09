@@ -1,0 +1,16 @@
+.event {
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.event:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.title:hover {
+    color: blue !important;
+}

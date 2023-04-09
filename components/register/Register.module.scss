@@ -1,0 +1,398 @@
+// .register {
+//     width: 100%;
+//     height: 100vh;
+//     background-color: rgb(87, 87, 87);
+// }
+
+// .usertitle {
+//     width: 60%;
+//     color: #000080;
+//     border-bottom: 1px solid red;
+//     text-align: right;
+//     padding: 0.5rem 0;
+//     margin: 0% auto;
+// }
+
+// .container {
+//     width: 60%;
+//     height: 780px;
+//     background-color: rgba(204, 204, 204, 0.5);
+//     border-radius: 5px;
+//     margin: 1% auto;
+// }
+
+// .detail {
+//     width: 100%;
+//     height: 50%;
+//     display: flex;
+//     justify-content: space-between;
+//     /* align-items: center; */
+//     padding: 0.5rem 1rem;
+//     /* background-color: red; */
+// }
+
+
+// /* ##### Right Select */
+// .right {
+//     display: flex;
+//     justify-content: space-around;
+//     /* align-items: center; */
+//     flex-direction: column;
+//     width: 45%;
+//     height: 300px;
+//     /* background-color: blue; */
+//     margin: 5% 0;
+//     padding: 0.5rem 1.5rem;
+// }
+
+// .file input {
+//     margin: 0 0.3rem 0 0;
+// }
+
+// .right span {
+//     color: red;
+//     font-size: 20px;
+// }
+
+// .right .person select{
+//     width: 12%;
+//     height: 30px;
+//     background-color: #ccc;
+//     border-top-right-radius: 3px;
+//     border-bottom-right-radius: 3px;
+//     border: none;
+//     font-size: 14px;
+//     margin: 0 0.8rem 0 0;
+//     padding: 0 0.2rem;
+// }
+
+// .right .person input {
+//     width: 50.4%;
+//     height: 30px;
+//     background-color: #fff;
+//     border-bottom-left-radius: 3px;
+//     border-top-left-radius: 3px;
+//     border: none;
+//     outline: none;
+//     font-size: 14px;
+//     padding: 0rem 0.5rem;
+// }
+
+// .moblie {
+//     margin: 0 4.5rem 0 0;
+// }
+
+// .moblie input {
+//     margin: 0 1rem 0 0;
+//     width: 74%;
+//     height: 30px;
+//     background-color: #fff;
+//     border-radius: 3px;
+//     border: none;
+//     outline: none;
+//     padding: 0 0.5rem;
+//     font-size: 14px;
+// }
+
+// .phone {
+//     margin: 0 5.2rem 0 0;
+// }
+
+// .phone input {
+//     margin: 0 1rem 0 0;
+//     width: 60%;
+//     height: 30px;
+//     font-size: 14px;
+//     border-bottom-right-radius: 3px;
+//     border-top-right-radius: 3px;
+//     border: none;
+//     outline: none;
+//     padding: 0 0.5rem;
+// }
+
+// .phone select {
+//     width: 16.5%;
+//     height: 30px;
+//     background-color: #ccc;
+//     border-top-left-radius: 3px;
+//     border-bottom-left-radius: 3px;
+//     border: none;
+//     font-size: 14px;
+//     /* padding: 0 0.5rem; */
+// }
+
+// .ostan {
+//     margin: 0 4.7rem 0 0;
+// }
+
+// .ostan select {
+//     margin: 0 1rem 0 0;
+//     width: 74.5%;
+//     height: 30px;
+//     padding: 0 0.5rem;
+//     font-size: 14px;
+//     border-radius: 3px;
+//     border: none;
+// }
+
+// .right select,
+// .right input {
+//     font-size: 15px;
+//     outline: none;
+// }
+
+// .right select:focus,
+// .right input:focus {
+//     outline: 1px solid rgb(73, 157, 247);
+//     box-shadow: 1px 1px 3px rgb(73, 157, 247);
+// }
+
+// /* ##### Left Select */
+// .left {
+//     width: 40%;
+//     height: 300px;
+//     /* background-color: yellow; */
+//     display: flex;
+//     justify-content: space-around;
+//     /* align-items: center; */
+//     flex-direction: column;
+//     margin: 5% 0;
+//     padding: 0.5rem 1.5rem;
+// }
+
+// .faaliat select {
+//     margin: 0 1rem 0 0;
+//     width: 60%;
+//     height: 30px;
+//     border: none;
+//     font-size: 14px;
+//     padding: 0 0.5rem;
+// }
+
+// .jobs {
+//     margin: 0 0.6rem 0 0;
+// }
+
+// .jobs select {
+//     margin: 0 1.2rem 0 0;
+//     width: 61%;
+//     height: 30px;
+//     border: none;
+//     font-size: 14px;
+//     padding: 0 0.5rem;
+// }
+
+// .course {
+//     margin: 0 0.6rem 0 0;
+// }
+
+// .course select {
+//     margin: 0 1.3rem 0 0;
+//     width: 60.9%;
+//     height: 30px;
+//     border: none;
+//     font-size: 14px;
+//     padding: 0 0.5rem;
+// }
+
+// .email {
+//     margin: 0 2.2rem 0 0;
+// }
+
+// .email input {
+//     margin: 0 1.3rem 0 0;
+//     width: 65%;
+//     height: 30px;
+//     border: none;
+//     font-size: 14px;
+//     padding: 0 0.5rem;
+// }
+
+// .city {
+//     margin: 0 2.6rem 0 0;
+// }
+
+// .city select {
+//     margin: 0 1.3rem 0 0;
+//     width: 66%;
+//     height: 30px;
+//     border: none;
+//     font-size: 14px;
+//     padding: 0 0.5rem;
+// }
+
+// .left select,
+// .left input {
+//     border-radius: 3px;
+//     border: none;
+//     outline: none;
+//     font-size: 17px;
+// }
+
+// .left select:focus,
+// .left input:focus {
+//     outline: 1px solid rgb(73, 157, 247);
+//     box-shadow: 1px 1px 3px rgb(73, 157, 247);
+// }
+
+
+// /* ##### Address */
+
+// .doneform {
+//     width: 100%;
+//     height: 22%;
+//     /* background-color: red; */
+// }
+
+// .doneContainer {
+//     width: 100%;
+//     height: 80%;
+//     margin: 2% auto;
+//     /* background-color: blue; */
+// }
+
+// .address {
+//     width: 80%;
+//     height: 50px;
+//     margin: 0 8rem 0 0;
+// }
+
+// .address input:focus,
+// .history textarea:focus {
+//     outline: 1px solid rgb(73, 157, 247);
+//     box-shadow: 1px 1px 3px rgb(73, 157, 247);
+// } 
+
+// .address input, 
+// .history textarea {
+//     border: none;
+//     outline: none;
+//     border-radius: 3px;
+//     padding: 0 0.5rem;
+//     font-size: 17px;
+// }
+
+// .address input {
+//     margin: 0 1rem 0 0;
+//     width: 93.2%;
+//     height: 30px;
+// }
+
+// /* ##### History */
+
+// .history {
+//     width: 100%;
+//     height: 100px;
+//     margin: 0 3.5rem 0 0;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 10px;
+// }
+
+// .history textarea {
+//     margin: 0 1.2rem 0 0;
+//     width: 82%;
+//     height: 100px;
+
+// }
+
+// .history label {
+//     margin-top: -100px;
+// }
+
+// .history div {
+//     width: 91%;
+//     height: 100%;
+// }
+
+
+// /* ##### Attention */
+
+// .attention {
+//     width: 74%;
+//     height: 73px;
+//     margin: 0 auto;
+//     background-color: red;
+//     margin: 0 11.4rem 0 0;
+//     text-align: justify;
+// }
+
+// .attention p {
+//     color: #fff;
+//     font-size: 14px;
+//     padding: 0.2rem 0.6rem;
+// }
+
+
+// /* ##### Action */
+
+// .action {
+//     width: 98%;
+//     margin: 1% auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-top: 1px solid #fff;
+//     padding: 1rem 0;
+// }
+
+// .action button {
+//     width: 60%;
+//     height: 40px;
+//     border-radius: 5px;
+//     border: none;
+//     color: #000;
+//     background-color: #5bc0de;
+//     font-size: 18px;
+//     transition: all 0.3s;
+//     cursor: pointer;
+// }
+
+// .action button:hover {
+//     background-color: #38b1d5;
+//     color: #fff;
+// }
+
+.register {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ff11ff11;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    .form {
+        width: 30%;
+        height: 30vh;
+        background-color: #252967;
+        box-shadow: 2px 2px 20px rgba(#000, 0.8);
+    }
+
+    .inputs {
+
+        font-weight: bold;
+        font-size: 18px;
+
+        input {
+            border: none;
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            outline: none;
+            margin: 0 12px;
+        }
+    }
+}
+
+.action button {
+    width: 100%;
+    padding: 0.4rem 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #aaa;
+
+    &:hover {
+        background-color: lighten(#fff, 0.1);
+    }
+}

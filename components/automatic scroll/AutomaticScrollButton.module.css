@@ -1,0 +1,23 @@
+.tabs {
+    width: 58%;
+    height: 50px;
+    margin: 0% auto;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+
+
+.tab {
+    width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.tab:active, 
+.tab:hover {
+    background-color: rgba(91, 113, 239, 0.2);
+}
+
